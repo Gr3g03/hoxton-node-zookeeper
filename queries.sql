@@ -42,6 +42,12 @@ TO
 fav_food;
 
 
+-- creating origin table and adding a default value for all cells 
+ALTER TABLE ANIMALS 
+ADD
+origin TEXT NOT NULL DEFAULT 'Albania'
+
+
 
 --deleting a row from db
 DELETE FROM  ANIMALS 
@@ -73,8 +79,3 @@ age = 10
 WHERE id = 7;
 
 
-
--- creating origin table and adding a default value for all cells 
-ALTER TABLE ANIMALS 
-ADD
-origin TEXT NOT NULL DEFAULT 'Albania'
